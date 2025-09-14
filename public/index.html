@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fragmentos Literários</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="main-header">
+        <h1>Fragmentos Literários</h1>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Livros</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+        </nav>
+
+        <form action="/search" method="get" class="search-form">
+            <input type="search" id="search-box" name="q" placeholder="Buscar livros...">
+            <button type="submit">Pesquisar</button>
+        </form>
+    </header>
+
+    <main>
+        <section class="lista-livros">
+            <h2>Livros em Destaque</h2>
+
+            <article class="livro-card">
+                <a href="livro-1.html">
+                    <img src="img/capa-livro-1.jpg" alt="Capa do Livro 1">
+                    <h3>Ride the Tiger</h3>
+                    <p>Julius Evola</p>
+                </a>
+            </article>
+            <article class="livro-card">
+                <a href="Livro-2.html">
+                    <img src="img/capa-livro-2.jpg" alt="Capa do Livro 2">
+                    <h3>O Sonho de um homem rídiculo</h3>
+                    <p>Fiódor Dostoiévski</p>
+                </a>
+            </article>
+            <article class="livro-card">
+                <a href="livro-3.html">
+                    <img src="img/capa-livro-3.jpg" alt="Capa do Livro 3">
+                    <h3>Caritas in Veritate</h3>
+                    <p>Bento XVI</p>
+                </a>
+            </article>
+        </section>
+    </main>
     
+    <footer class="main-footer">
+        <p>Fragmentos Literários.</p> 
+            <p>Christiano Gonçalves, Trabalho bonito e charmoso.</p>
+    </footer>
 </body>
 </html>
