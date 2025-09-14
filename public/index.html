@@ -3,59 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fragmentos Literários</title>
+    <title>Clube do Livro | Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="main-header">
-        <h1>Fragmentos Literários</h1>
 
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Livros</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-
-        </nav>
-
-        <form action="/search" method="get" class="search-form">
-            <input type="search" id="search-box" name="q" placeholder="Buscar livros...">
-            <button type="submit">Pesquisar</button>
-        </form>
+    <header>
+        <div class="container">
+            <h1 class="logo">Clube do Livro</h1>
+            <nav>
+                <a href="#resenhas">Resenhas</a>
+                <a href="#sobre">Sobre Nós</a>
+                <a href="#autores">Autores em Destaque</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="lista-livros">
-            <h2>Livros em Destaque</h2>
-
-            <article class="livro-card">
-                <a href="livro-1.html">
-                    <img src="img/capa-livro-1.jpg" alt="Capa do Livro 1">
-                    <h3>Ride the Tiger</h3>
-                    <p>Julius Evola</p>
-                </a>
-            </article>
-            <article class="livro-card">
-                <a href="Livro-2.html">
-                    <img src="img/capa-livro-2.jpg" alt="Capa do Livro 2">
-                    <h3>O Sonho de um homem rídiculo</h3>
-                    <p>Fiódor Dostoiévski</p>
-                </a>
-            </article>
-            <article class="livro-card">
-                <a href="livro-3.html">
-                    <img src="img/capa-livro-3.jpg" alt="Capa do Livro 3">
-                    <h3>Caritas in Veritate</h3>
-                    <p>Bento XVI</p>
-                </a>
-            </article>
-        </section>
+        <div class="banner">
+            <div class="container">
+                <h2>Encontre sua próxima grande aventura literária.</h2>
+                <p>Exploramos os universos criados pelos melhores autores e trazemos para você resenhas honestas, profundas e apaixonadas. Junte-se à nossa comunidade de leitores!</p>
+            </div>
+        </div>
     </main>
-    
-    <footer class="main-footer">
-        <p>Fragmentos Literários.</p> 
-            <p>Christiano Gonçalves, Trabalho bonito e charmoso.</p>
+
+    <section id="resenhas" class="cards-section">
+        <div class="container">
+            <div class="cards-grid">
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Resenhas Detalhadas</h3>
+                    <p>Análises completas dos lançamentos e clássicos que você precisa conhecer.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <h3>Biografias de Autores</h3>
+                    <p>Conheça a história por trás dos gênios da literatura mundial.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h3>Guias de Leitura</h3>
+                    <p>Dicas e guias para você organizar suas leituras e aproveitar ao máximo cada livro.</p>
+                </article>
+            </div> </div> </section> <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Clube do Livro. Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
