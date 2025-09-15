@@ -1,6 +1,6 @@
-/* --- ESTILOS BÁSICOS (ETAPA 2) --- */
+/* --- ESTILOS PERSONALIZADOS (ETAPA 4 - BOOTSTRAP) --- */
 
-/* Reset e Variáveis de Cor */
+/* Variáveis de Cor (ainda úteis para nossa identidade visual) */
 :root {
     --cor-primaria: #2c3e50; /* Azul escuro */
     --cor-secundaria: #e74c3c; /* Vermelho/Laranja */
@@ -9,43 +9,24 @@
     --cor-branco: #ffffff;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* REMOVIDO: .container (Bootstrap já tem)
+   REMOVIDO: Regras de Flexbox e Grid (ex: .cards-grid)
+   REMOVIDO: TODAS as Media Queries (@media)
+*/
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--cor-fundo);
     color: var(--cor-texto);
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Estilos do Cabeçalho */
-header {
-    background-color: var(--cor-branco);
-    padding: 1.5rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-header .container {
-    display: flex; /* Uso de Flexbox para alinhar itens */
-    justify-content: space-between;
-    align-items: center;
-}
-
+/* Estilos do Cabeçalho Personalizado */
 .logo {
     font-size: 1.8rem;
     color: var(--cor-primaria);
+    font-weight: 700;
 }
 
-nav a {
+.nav-link-custom {
     text-decoration: none;
     color: var(--cor-texto);
     font-weight: 600;
@@ -53,92 +34,42 @@ nav a {
     transition: color 0.3s ease;
 }
 
-nav a:hover {
+.nav-link-custom:hover {
     color: var(--cor-secundaria);
 }
 
-/* Estilos da Seção Principal (Main/Banner) */
-main .banner {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=1470&auto=format&fit=crop');
+/* Estilos do Banner (ainda precisamos da nossa imagem) */
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=1470&auto-format&fit=crop');
     background-size: cover;
     background-position: center;
-    color: var(--cor-branco);
-    text-align: center;
-    padding: 6rem 0;
+    color: var(--cor-branco); /* Bootstrap não define a cor do texto para fundos claros, então forçamos */
 }
 
-main .banner h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-main .banner p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-/* Estilos da Seção de Cards */
-.cards-section {
-    padding: 4rem 0;
-}
-
-.cards-grid {
-    display: grid; /* Uso de Grid para layout dos cards */
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.card {
-    background-color: var(--cor-branco);
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    overflow: hidden; /* Garante que a imagem não passe da borda */
-    text-align: center;
+/* Ajustes finos nos cards para manter nosso visual */
+.card-hover:hover {
+    transform: translateY(-5px);
     transition: transform 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-}
-
-/* NOVO: Estilos para o container do ícone */
-.card-icon {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* NOVO: Estilos para o ícone em si */
-.card-icon i {
-    font-size: 5rem; /* Tamanho do ícone */
-    color: var(--cor-secundaria); /* Cor laranja/vermelha */
-}
-
-.card h3 {
+.card-title {
     font-size: 1.5rem;
-    margin: 1.5rem 0 1rem 0;
     color: var(--cor-primaria);
 }
 
-.card p {
-    padding: 0 1.5rem 1.5rem 1.5rem;
+.card-icon {
+    padding-top: 1.5rem;
 }
 
-/* Estilos do Rodapé */
+.card-icon i {
+    font-size: 5rem;
+    color: var(--cor-secundaria);
+}
+
+/* Estilos do Rodapé Personalizado */
 footer {
     background-color: var(--cor-primaria);
     color: var(--cor-fundo);
-    padding: 2rem 0;
-    margin-top: 2rem;
-}
-
-.footer-content {
-    display: flex; /* Uso de Flexbox novamente */
-    justify-content: space-between;
-    align-items: center;
 }
 
 .social-links a {
