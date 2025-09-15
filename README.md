@@ -15,8 +15,8 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Print da versão responsiva com CSS puro
 
-![O puro CSS](public/img/versao1.0.png)
+![O puro CSS-](public/img/versao1.0.png)
 
 ## Print da versão responsiva com Bootstrap
 
-![Bootstrap](public/img/versao2.0.png)
+![Bootstrap-](public/img/versao2.0.png)
