@@ -8,15 +8,15 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Christiano Gonçalves Araujo
+- Matricula: 900008
+- Proposta de projeto escolhida: livros e autores
+- Breve descrição sobre seu projeto: somente resenhas de livros e coisas desse tipo
 
 ## Print da versão responsiva com CSS puro
 
-<<  COLOQUE A IMAGEM AQUI >>
+![O puro CSS](public/img/versao1.0.png)
 
 ## Print da versão responsiva com Bootstrap
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Bootstrap](public/img/versao2.0.png)
